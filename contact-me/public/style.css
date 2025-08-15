@@ -1,0 +1,193 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, th, td, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #d7cdcde5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+
+    margin: 100px 100px;
+    margin-top: 100px;
+    background: hsl(240, 12%, 93%);
+    border-radius: 24px;
+    box-shadow: 0 6px 32px rgba(216, 224, 216, 0.673);
+    padding: 40px 36px 36px 36px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111827;
+    letter-spacing: 1px;
+}
+
+.save123 {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(90deg, #59eb15e0 0%, #15100d 100%);
+    color: #e8eeef;
+    border:1px solid rgb(111, 196, 14);
+    border-radius: 50px;
+    padding: 10px 36px;
+    
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(30, 31, 32, 0.834);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    margin-top: -12px;
+}
+.save123:hover {
+    background: linear-gradient(90deg, #93f40a 0%, #449709a6 100%);
+    box-shadow: 0 4px 16px rgba(22, 119, 255, 0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+
+
+
+.add-contact-btn:hover {
+    background: #125fd1;
+}
+
+.form-section {
+    background: #f9fbfd;
+    border-radius: 16px;
+    padding: 28px 18px 18px 18px;
+    margin-bottom: 18px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #1677ff;
+    outline: none;
+}
+
+
+
+button.save, .btn.save {
+    background: #1677ff;
+    color: #d90a0a;
+    font-weight: 500;
+}
+
+button.save:hover, .btn.save:hover {
+    background: #125fd1;
+}
+
+button.delete123, .btn.cancel {
+     text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(90deg, #fc0202e0 0%, #232121 100%);
+    color: #f30b0b;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 25px;
+    
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(6, 5, 5, 0.999);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    margin-top: -12px;
+}
+
+button.delete123:hover, .btn.cancel:hover {
+    background: #450404;
+}
+
+.contacts-info {
+    margin: 18px 0 8px 0;
+    color: #6b7280;
+    font-size: 1.08rem;
+}
+
+.contacts-info b {
+    color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 18px 14px;
+    text-align: left;
+}
+
+th {
+    background: #f5f7fa;
+    color: #222;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+td {
+    font-size: 1.13rem;
+    color: #222;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.actions a {
+    margin-right: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.08rem;
+}
+
+.actions .edit {
+    color: #1677ff;
+}
+
+.actions .edit:hover {
+    text-decoration: underline;
+}
+
+.actions .delete {
+    color: #e11d48;
+}
+
+.actions .delete:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 18px 6px;
+    }
+    th, td {
+        padding: 12px 6px;
+        font-size: 1rem;
+    }
+    .add-contact-btn {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+}
